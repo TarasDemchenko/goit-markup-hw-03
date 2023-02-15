@@ -12,6 +12,16 @@
     --white-color: #FFFFFF;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -29,6 +39,57 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
     background-color: var(--white-color);
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* ---Header---*/
@@ -93,6 +154,7 @@ body {
 }
 
 /* ------------main----------- */
+
 .box-order,
 .footer-last {
     background: var(--modal-overlay);
@@ -103,8 +165,12 @@ body {
     font-size: 56px;
     line-height: 1.07;
     color: var(--white-color);
-    text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
+}
+
+.box-order {
+    text-align: center;
 }
 
 .button-main {
@@ -116,17 +182,16 @@ body {
     background: var(--primary-brand);
     cursor: pointer;
     letter-spacing: 0.04em;
-
+    padding: 16px 32px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
 .button-main:hover,
 .button-main:focus {
     background-color: var(--pressed-state);
-}
-
-ul {
-    list-style: none;
 }
 
 .logo-bottom {
@@ -158,6 +223,7 @@ ul {
     line-height: 1.5;
     color: var(--text);
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .title-item {
@@ -167,33 +233,34 @@ ul {
     color: var(--modal-overlay);
     text-align: center;
     letter-spacing: 0.02em;
+    padding-bottom: 72px;
 }
 
-.button-item {
+.content-btn {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--primary-brand);
     letter-spacing: 0.04em;
+    color: var(--primary-brand);
+    background: var(--light);
+    padding: 12px 24px;
+    display: inline-block;
+    text-align: center;
     border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-.button-list :hover,
-.button-list :focus {
+.content-btn:hover,
+.content-btn:focus {
     background-color: var(--pressed-state);
     color: var(--white-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
 .content-title {
     background-color: var(--light);
-}
-
-.portfolio-content {
-    background-color: #E5E5E5;
 }
 
 /* -------------footer----------- */
@@ -203,3 +270,5 @@ ul {
     color: var(--accent);
     letter-spacing: 0.02em;
 }
+
+/* -------Portfolio_______ */
