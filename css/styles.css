@@ -97,12 +97,6 @@ a {
     background: var(--white-color);
 }
 
-.header-link:hover,
-.header-link:focus {
-    color: var(--pressed-state);
-    text-decoration: none;
-}
-
 .header-link {
     color: var(--dark);
     text-decoration: none;
@@ -112,8 +106,19 @@ a {
     letter-spacing: 0.02em;
 }
 
+.header-link:hover,
+.header-link:focus {
+    color: var(--pressed-state);
+    text-decoration: none;
+}
+
 .current {
     color: var(--primary-brand);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -136,6 +141,32 @@ a {
     text-decoration: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.site-nav {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 76px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: 300px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+.auth-nav .item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .auth-nav-link {
@@ -204,10 +235,9 @@ a {
     text-transform: uppercase;
 }
 
-.site-nav {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+.future {
+    display: flex;
+
 }
 
 .future-item {
