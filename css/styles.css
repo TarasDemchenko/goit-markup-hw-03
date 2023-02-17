@@ -41,7 +41,6 @@ body {
     background-color: var(--white-color);
     font-size: 16px;
     letter-spacing: 0.02em;
-    margin: 0;
 }
 
 h1,
@@ -94,7 +93,7 @@ a {
 
 /* ---Header---*/
 .header {
-    background: var(--white-color);
+    display: flex;
 }
 
 .header-link {
@@ -165,6 +164,7 @@ a {
 
 .address {
     margin-left: auto;
+
 }
 
 
@@ -228,12 +228,18 @@ a {
     background: var(--modal-overlay);
 }
 
+.box-order {
+    padding: 188px 0 292px 0;
+}
+
 .slogan {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     color: var(--white-color);
     letter-spacing: 0.02em;
+    width: 496px;
+    margin: 0 auto;
     margin-bottom: 48px;
 }
 
@@ -243,13 +249,10 @@ a {
     display: flex;
 }
 
-.future>.list {
+.future>.list:not(:last-child) {
     margin-right: 24px;
 }
 
-.future>.list:not(:last-child) {
-    margin-right: 0;
-}
 
 .future-item {
     font-weight: 500;
@@ -264,13 +267,9 @@ a {
     line-height: 1.5;
     color: var(--text);
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
     width: 264px;
 }
 
-.future>.list:not(:last-child) {
-    margin-right: 24px;
-}
 
 /* -------section what are we doing-------- */
 
@@ -281,20 +280,21 @@ a {
     color: var(--modal-overlay);
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
-.future-item {
+.future-rezult {
     display: flex;
 }
 
-.future-item>.list:not(:last-child) {
+.future-rezult>.list:not(:last-child) {
     margin-right: 24px;
 }
 
 /* --------section Our team-------- */
 .content-title {
     background-color: var(--light);
+
 }
 
 .future-team {
@@ -308,15 +308,13 @@ a {
 
 .future-team>.list {
     background-color: var(--white-color);
-}
-
-.content-title {
-    margin-top: 120px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .about-team {
     text-align: center;
-    margin: 32px 0;
+    padding: 32px 0;
 }
 
 .future-education {
@@ -334,7 +332,7 @@ a {
 }
 
 .footer-main {
-    margin-top: 0;
+    padding: 100px 0;
     background: var(--dark);
 }
 
@@ -364,8 +362,7 @@ a {
 
 .button-list {
     display: flex;
-    margin-top: 96px;
-    margin-bottom: 72px;
+    padding-top: 96px;
     justify-content: center;
 }
 
@@ -376,8 +373,13 @@ a {
 .content-items {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 72px;
     margin-left: -24px;
-    margin-top: -48px;
+    padding-bottom: 120px;
+}
+
+.content-items>.list:nth-child(-n + 3) {
+    margin-top: 0;
 }
 
 .content-items>.list {
@@ -398,5 +400,5 @@ a {
 }
 
 .footer-last {
-    margin-top: 120px;
+    padding: 100px 0;
 }

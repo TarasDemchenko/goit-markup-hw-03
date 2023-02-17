@@ -5,6 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
@@ -13,66 +20,59 @@
 	</head>
 	<body>
 		<!-- contacts -->
-		<header class="header">
-			<nav class="main-nav container">
-				<a href="./index.html" class="logo-next"><span class="logo">Web</span>Studio</a>
-				<ul class="site-nav">
-					<li class="item"><a href="./portfolio.html" class="header-link current">Studio</a></li>
-					<li class="item"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
-					<li class="item"><a href="./portfolio.html" class="header-link">Contacts</a></li>
-				</ul>
+		<header>
+			<div class="container header">
+				<nav class="main-nav">
+					<a href="./index.html" class="logo-next"><span class="logo">Web</span>Studio</a>
+					<ul class="site-nav">
+						<li class="item"><a href="./portfolio.html" class="header-link current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
+						<li class="item"><a href="./portfolio.html" class="header-link">Contacts</a></li>
+					</ul>
+				</nav>
 				<address class="address">
 					<ul class="auth-nav">
 						<li class="item"><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
 						<li class="item"><a href="tel:+110001111111" class="auth-nav-link">+11 (000) 111-11-11</a></li>
 					</ul>
 				</address>
-			</nav>
+			</div>
 		</header>
 		<!-- About company -->
 		<main>
 			<section class="box-order section">
-				<h1 class="slogan"
-					>Effective Solutions <br />
-					for Your Business</h1
-				>
-				<button type="button" class="button-main">Order Service</button>
+				<div class="container">
+					<h1 class="slogan">Effective Solutions for Your Business</h1>
+					<button type="button" class="button-main">Order Service</button>
+				</div>
 			</section>
 			<section class="aside section">
 				<div class="container">
 					<h2 class="visually-hidden">About company</h2>
 					<ul class="future">
 						<li class="list">
-							<div class="skils">
-								<h3 class="future-item">Strategy</h3>
-								<p class="future-text">
-									Our goal is to identify the business problem to walk away with the perfect and creative solution.
-								</p>
-							</div>
+							<h3 class="future-item">Strategy</h3>
+							<p class="future-text">
+								Our goal is to identify the business problem to walk away with the perfect and creative solution.
+							</p>
 						</li>
 						<li class="list">
-							<div class="skils">
-								<h3 class="future-item">Punctuality</h3>
-								<p class="future-text">
-									Bring the key message to the brand's audience for the best price within the shortest possible time.
-								</p>
-							</div>
+							<h3 class="future-item">Punctuality</h3>
+							<p class="future-text">
+								Bring the key message to the brand's audience for the best price within the shortest possible time.
+							</p>
 						</li>
 						<li class="list">
-							<div class="skils">
-								<h3 class="future-item">Diligence</h3>
-								<p class="future-text">
-									Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-								</p>
-							</div>
+							<h3 class="future-item">Diligence</h3>
+							<p class="future-text">
+								Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+							</p>
 						</li>
 						<li class="list">
-							<div class="skils">
-								<h3 class="future-item">Technologies</h3>
-								<p class="future-text">
-									Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-								</p>
-							</div>
+							<h3 class="future-item">Technologies</h3>
+							<p class="future-text">
+								Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -80,7 +80,7 @@
 			<section>
 				<div class="container">
 					<h2 class="title-item">What are we doing</h2>
-					<ul class="future-item">
+					<ul class="future-rezult">
 						<li class="list">
 							<img src="./images/rectangle71.jpg" width="360" alt="computer" />
 						</li>
@@ -99,36 +99,30 @@
 					<h2 class="title-item">Our Team</h2>
 					<ul class="future-team">
 						<li class="list">
-							<div class="img-team">
-								<img src="./images/photo1.jpg" width="264" alt="photo marka" />
-							</div>
+							<img src="./images/photo1.jpg" width="264" alt="photo marka" />
 							<div class="about-team">
 								<h3 class="future-name">Mark Guerrero</h3>
 								<p class="future-education">Product Designer</p>
 							</div>
 						</li>
 						<li class="list">
-							<div class="img-team">
-								<img src="./images/photo2.jpg" width="264" alt="photo toma" />
-							</div>
+							<img src="./images/photo2.jpg" width="264" alt="photo toma" />
+
 							<div class="about-team">
 								<h3 class="future-name">Tom Ford</h3>
 								<p class="future-education">Frontend Developer</p>
 							</div>
 						</li>
 						<li class="list">
-							<div class="img-team">
-								<img src="./images/photo3.jpg" width="264" alt="photo camilii" />
-							</div>
+							<img src="./images/photo3.jpg" width="264" alt="photo camilii" />
 							<div class="about-team">
 								<h3 class="future-name">Camila Garcia</h3>
 								<p class="future-education">Marketing</p>
 							</div>
 						</li>
 						<li class="list">
-							<div class="img-team">
-								<img src="./images/photo4.jpg" width="264" alt="photo daniela" />
-							</div>
+							<img src="./images/photo4.jpg" width="264" alt="photo daniela" />
+
 							<div class="about-team">
 								<h3 class="future-name">Daniel Wilson</h3>
 								<p class="future-education">UI Designer</p>
@@ -141,9 +135,7 @@
 		<!-- basement -->
 		<footer class="footer-main">
 			<div class="container">
-				<div class="fuul-logo">
-					<a href="./index.html" class="logo-bottom"><span class="logo">Web</span>Studio</a>
-				</div>
+				<a href="./index.html" class="logo-bottom"><span class="logo">Web</span>Studio</a>
 				<p class="subtitle">
 					Increase the flow of customers and sales for your business with digital marketing & growth solutions.
 				</p>
