@@ -229,7 +229,7 @@ a {
 }
 
 .box-order {
-    padding: 188px 0 292px 0;
+    padding: 188px 0;
 }
 
 .slogan {
@@ -281,6 +281,11 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
+
+}
+
+.rezult {
+    padding-bottom: 120px;
 }
 
 .future-rezult {
@@ -337,6 +342,11 @@ a {
 }
 
 /* -------Portfolio_______ */
+
+header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .content-btn {
     font-family: 'Roboto';
     font-weight: 500;
